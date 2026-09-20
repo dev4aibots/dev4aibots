@@ -22,9 +22,11 @@
 <br>
 
 <!-- GIF and Intro -->
-<a href="https://dev4aibots.com">
-  <img align="right" height="300" width="500" src="https://raw.githubusercontent.com/mikonoid/mikonoid/main/images/gifs/coder3.gif" alt="Coding Animation" />
-</a>
+<p align="center">
+  <a href="https://dev4aibots.com">
+    <img width="100%" src="https://raw.githubusercontent.com/mikonoid/mikonoid/main/images/gifs/coder3.gif" alt="Coding Animation" />
+  </a>
+</p>
 
 <h3 align="left"><font size="+2" face="Verdana">01 — Thesis</font></h3>
 <p align="left">
