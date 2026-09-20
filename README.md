@@ -14,7 +14,8 @@
 <p align="center">
   <a href="https://dev4aibots.com"><img src="https://img.shields.io/badge/Portfolio-dev4aibots.com-C9F24E?style=for-the-badge&logo=vercel&logoColor=black&labelColor=08080A"></a>
   <a href="https://linkedin.com/in/devraj-gadhvi-793338388"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=08080A"></a>
-  <a href="mailto:devrajgadhvi726292@gmail.com"><img src="https://img.shields.io/badge/Email-Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=08080A"></a>
+  <a href="mailto:hello@dev4aibots.com"><img src="https://img.shields.io/badge/Email-hello@dev4aibots.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=08080A"></a>
+  <a href="mailto:devrajgadhvi72629@gmail.com"><img src="https://img.shields.io/badge/Email-devrajgadhvi72629@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=08080A"></a>
 </p>
 
 <br>
