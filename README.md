@@ -1,7 +1,7 @@
 <!-- Header Section -->
 <h1 align="center">
   <a href="https://dev4aibots.com">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=700&size=35&pause=1000&color=C9F24E&center=true&vCenter=true&width=800&lines=Hi+👋,+I'm+Varamal+Devraj+Kheraj;AI+Engineer+building+Agentic+Systems;Focusing+on+RAG,+LLMs+%26+Deep+Learning" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=700&size=35&pause=1000&color=C9F24E&center=true&vCenter=true&width=800&lines=Hello,+I+am+Devraj" alt="Typing SVG" />
   </a>
 </h1>
 
