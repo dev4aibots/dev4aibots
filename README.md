@@ -31,7 +31,7 @@
 
 <h3 align="left"><font size="+2" face="Verdana">01 — Thesis</font></h3>
 <p align="left">
-  I build AI for the messy real world—where people, data, and failure refuse to follow the plan.
+  I build AI for the messy real world—where people, data, and features refuse to follow the plan.
 </p>
 <br>
 
