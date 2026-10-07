@@ -1,100 +1,44 @@
-<!-- Header Section -->
-<h1 align="center">
-  <a href="https://dev4aibots.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=35&pause=1000&color=C9F24E&center=true&vCenter=true&width=800&lines=Hello,+I+am+Devraj;AI+ENGINEER;VECTOR+SEARCH+ENGINEER;FULL-STACK+DEVELOPER;SYSTEMS+ARCHITECT&cursor=block" alt="Typing SVG" />
-  </a>
-</h1>
+# Dev4AIBots
 
-<h3 align="center">
-  <font face="Arial">
-    I am an <a href="https://dev4aibots.com" target="_blank" rel="noreferrer">AI Engineer</a> from Gujarat, India. 
-  </font>
-</h3>
+**AI systems for local businesses.** Dev4AIBots is a Udyam-registered micro enterprise
+(UDYAM-GJ-29-0019103, India) founded and built solo by **Varamal Devraj Kheraj**.
 
-<p align="center">
-  <a href="https://dev4aibots.com"><img src="https://img.shields.io/badge/Portfolio-dev4aibots.com-C9F24E?style=for-the-badge&logo=vercel&logoColor=black&labelColor=08080A"></a>
-  <a href="https://linkedin.com/in/devraj-gadhvi-793338388"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=08080A"></a>
-  <a href="mailto:hello@dev4aibots.com"><img src="https://img.shields.io/badge/Email-hello@dev4aibots.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=08080A"></a>
-  <a href="mailto:devrajgadhvi72629@gmail.com"><img src="https://img.shields.io/badge/Email-devrajgadhvi72629@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=08080A"></a>
+<p>
+  <a href="https://dev4aibots.com"><img src="https://img.shields.io/badge/Website-dev4aibots.com-0A66C2?style=for-the-badge"></a>
+  <a href="https://linkedin.com/in/devraj-gadhvi-793338388"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="mailto:hello@dev4aibots.com"><img src="https://img.shields.io/badge/Email-hello@dev4aibots.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </p>
 
-<br>
-<hr>
-<br>
+## What we're building
 
-<!-- GIF and Intro -->
-<p align="center">
-  <a href="https://dev4aibots.com">
-    <img width="100%" src="https://raw.githubusercontent.com/mikonoid/mikonoid/main/images/gifs/coder3.gif" alt="Coding Animation" />
-  </a>
-</p>
+A two-app platform for local businesses (shops, parlours, services):
 
-<h3 align="left"><font size="+2" face="Verdana">01 — Thesis</font></h3>
-<p align="left">
-  I build AI for the messy real world—where people, data, and features refuse to follow the plan.
-</p>
-<br>
+- **Business app** — the business customizes its own theme, design and vibe; manages
+  customer communication, services, announcements and automations. Paid plans.
+- **Customer app** — free forever. Customers join via business code, QR or link, then get
+  AI chat, announcements, one-click appointment booking, local reviews and automations.
 
-<h3 align="left"><font size="+2" face="Verdana">02 — Engineering Arsenal</font></h3>
-<p align="left">
-  <ul>
-    <li>🎓 <strong>12 verified credentials</strong> (IBM, DeepLearning.AI, Vanderbilt, UiPath, etc.)</li>
-    <li>💻 <strong>9 public core systems</strong> focusing on LLM architecture and multi-agent loops.</li>
-  </ul>
-</p>
+> **Status: in active development — not launched.** No funding, no revenue, no customers
+> yet, and we don't pretend otherwise. Every feature across our repos is labeled
+> **Working / In development / Roadmap**. Real company, real code, honest stage.
 
-<br clear="all">
-<br>
-<hr>
-<br>
+## This repo
 
-<!-- Languages and Tools Section -->
-<h3 align="center"><font size="+2" face="Verdana">Languages and Tools Stack</font></h3>
-<br>
+This repository hosts the **Dev4AIBots company website** (Next.js + TypeScript, custom CSS —
+no template look). Source of truth for company facts: [`lib/site.ts`](lib/site.ts).
+Application pack for startup programs: [`docs/startup-program-application.md`](docs/startup-program-application.md).
 
-#### AI / ML & Agents
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python" title="Python" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="pytorch" title="PyTorch" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="machine-learning" title="Machine Learning" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="tensorflow" title="TensorFlow" width="40" height="40"/>
-</p>
+The product apps live in their own repos: [`admin-app`](https://github.com/dev4aibots/admin-app)
+(business side, native Android) and [`customer-app`](https://github.com/dev4aibots/customer-app)
+(customer side, native Android).
 
-#### Web & Backend
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript" title="JavaScript" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="typescript" title="TypeScript" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react" title="React" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="nodejs" title="NodeJS" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="fastapi" title="FastAPI" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="tailwind" title="TailwindCSS" width="40" height="40"/>
-</p>
+## Engineering proof
 
-#### Data & Search
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="postgresql" title="PostgreSQL" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" title="Elasticsearch" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="mysql" title="MySQL" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="redis" title="Redis" width="40" height="40"/>
-</p>
+- **[holo-racer](https://github.com/dev4aibots/holo-racer)** — webcam-controlled 3D racing
+  game (Vite + TypeScript + Three.js + MediaPipe hand tracking), deployed and playable.
+- **[Pramaan](https://github.com/dev4aibots/Pramaan)** — Python RAG evidence engine
+  (`apps/`, `src/`, `tests/`, `evals/`, Docker).
 
-#### DevOps & Cloud
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="docker" title="Docker" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" alt="kubernetes" title="Kubernetes" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" title="AWS" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="gcp" title="GCP" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="linux" title="Linux" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/prometheusio/prometheusio-icon.svg" alt="prometheus" title="Prometheus" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="git" title="Git" width="40" height="40"/>
-</p>
+## Contact
 
-<br>
-<hr>
-<br>
-
-<h3 align="center"><font size="+2" face="Verdana">GitHub Statistics</font></h3>
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dev4aibots&theme=tokyonight" alt="dev4aibots's GitHub stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dev4aibots&theme=tokyonight" alt="Top Languages" />
-</p>
+hello@dev4aibots.com
