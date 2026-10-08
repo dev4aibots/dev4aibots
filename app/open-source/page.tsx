@@ -1,12 +1,26 @@
 import type { Metadata } from "next";
 import StatusBadge from "@/components/StatusBadge";
+import { ArrowRight } from "@/components/icons";
 import { SITE, REPOS } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Open Source",
   description:
-    "Dev4AIBots on GitHub: real projects (holo-racer, Pramaan) and learning builds, each honestly described for what it is.",
+    "Dev4AIBots on GitHub: holo-racer and Pramaan are real projects; the rest are learning builds from coursework — each honestly described for what it is.",
   alternates: { canonical: "/open-source" },
+  openGraph: {
+    title: "Open Source · Dev4AIBots",
+    description:
+      "Real projects and learning builds, each honestly described for what it is.",
+    url: `${SITE.domain}/open-source`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Open Source · Dev4AIBots",
+    description:
+      "Real projects and learning builds, each honestly described for what it is.",
+  },
 };
 
 const LEARNING_BUILDS = [
@@ -51,10 +65,10 @@ const LEARNING_BUILDS = [
 export default function OpenSource() {
   return (
     <>
-      <section className="hero">
+      <section className="hero" aria-labelledby="oss-title">
         <div className="container">
-          <span className="eyebrow">Open Source</span>
-          <h1>Our code, labeled for what it actually is.</h1>
+          <span className="section-label">open source</span>
+          <h1 id="oss-title">Our code, labeled for what it actually is.</h1>
           <p className="lede">
             Everything public lives at{" "}
             <a href={SITE.github} target="_blank" rel="noopener noreferrer">
@@ -66,36 +80,36 @@ export default function OpenSource() {
             they&apos;d find.
           </p>
           <div className="note-box">
-            <strong>Licensing.</strong> These repositories are public for reading
-            and learning; formal open-source license files are being added.
-            Until then, treat them as source-available, all rights reserved.
+            <strong>Licensing.</strong> These repositories are public for
+            reading and learning; formal open-source license files are being
+            added. Until then, treat them as source-available, all rights
+            reserved.
           </div>
         </div>
       </section>
 
       <section className="section" aria-labelledby="real">
         <div className="container">
-          <span className="eyebrow">Real projects</span>
-          <h2 id="real">Built, deployed, maintained.</h2>
-          <div className="grid-2" style={{ marginTop: "2rem" }}>
-            <article className="card">
+          <span className="section-label">real projects</span>
+          <h2 id="real">Which repositories are real projects?</h2>
+          <div className="bento">
+            <article className="bento-main">
               <StatusBadge status="working" />
               <h3>holo-racer</h3>
               <p>
                 Webcam-controlled 3D racing game. Vite + TypeScript + Three.js,
-                MediaPipe hand tracking in a Web Worker, gesture filtering
+                MediaPipe hand tracking in a Web Worker, geometric gesture
                 pipeline, production deploys on Vercel. Our strongest
-                engineering artifact — and the one we point reviewers at
-                first.
+                engineering artifact — the one we point reviewers at first.
               </p>
-              <div className="card-footer">
+              <div className="bento-foot">
                 <a
                   className="card-link"
                   href={REPOS.holoRacer}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  github.com/dev4aibots/holo-racer →
+                  github.com/dev4aibots/holo-racer <ArrowRight size={16} />
                 </a>
                 <a
                   className="card-link"
@@ -103,46 +117,54 @@ export default function OpenSource() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Live demo →
+                  Live demo <ArrowRight size={16} />
                 </a>
               </div>
             </article>
-            <article className="card">
-              <StatusBadge status="development" />
-              <h3>Pramaan</h3>
-              <p>
-                Self-hosted multi-modal RAG evidence engine in Python.
-                Authorization before retrieval (Casbin RBAC/ABAC), hybrid
-                search with reranking, claim verification, Streamlit + FastAPI
-                over Docker Compose. Real project structure; in active
-                development.
-              </p>
-              <div className="card-footer">
-                <a
-                  className="card-link"
-                  href={REPOS.pramaan}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/dev4aibots/Pramaan →
-                </a>
-              </div>
-            </article>
+            <div className="bento-side">
+              <article className="bento-cell">
+                <StatusBadge status="development" />
+                <h3>Pramaan</h3>
+                <p>
+                  Self-hosted multi-modal RAG evidence engine in Python.
+                  Authorization before retrieval, hybrid search with
+                  reranking, claim verification. Real project structure; in
+                  active development.
+                </p>
+                <div className="bento-foot">
+                  <a
+                    className="card-link"
+                    href={REPOS.pramaan}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    github.com/dev4aibots/Pramaan <ArrowRight size={16} />
+                  </a>
+                </div>
+              </article>
+              <article className="bento-cell">
+                <StatusBadge status="development" />
+                <h3>Platform apps</h3>
+                <p>
+                  The business and customer app repositories are not public
+                  yet. They will be listed here when published — not before.
+                </p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="section" aria-labelledby="learning">
         <div className="container">
-          <span className="eyebrow">Learning builds</span>
-          <h2 id="learning">Reference implementations, honestly labeled.</h2>
+          <span className="section-label">learning builds</span>
+          <h2 id="learning">What are the other repositories?</h2>
           <p className="lede">
-            These repositories are course and tutorial scaffolds — real files,
-            real structure, built to learn a pattern. They are{" "}
-            <strong>not</strong> production systems, and we do not present them
-            as such.
+            Reference implementations — real files, real structure, built to
+            learn a pattern. They are <strong>not</strong> production systems,
+            and we do not present them as such.
           </p>
-          <div className="table-wrap" style={{ marginTop: "2rem" }}>
+          <div className="table-wrap">
             <table>
               <caption>Learning builds — reference implementations</caption>
               <thead>
@@ -159,12 +181,12 @@ export default function OpenSource() {
                         href={`${SITE.github}/${r.name}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ fontFamily: "var(--mono)", fontSize: "0.88rem" }}
+                        style={{ fontFamily: "var(--mono)", fontSize: "0.85rem" }}
                       >
                         {r.name}
                       </a>
                     </td>
-                    <td style={{ color: "var(--muted)" }}>{r.what}</td>
+                    <td className="muted-cell">{r.what}</td>
                   </tr>
                 ))}
               </tbody>

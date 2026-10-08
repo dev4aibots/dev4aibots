@@ -19,10 +19,10 @@ function BrandMark() {
       aria-hidden="true"
       focusable="false"
     >
-      <rect x="1" y="1" width="30" height="30" rx="7" fill="#0d1016" stroke="#2fd6b5" strokeWidth="1.6" />
-      <circle cx="11" cy="16" r="3.2" fill="#2fd6b5" />
-      <circle cx="21" cy="16" r="3.2" fill="none" stroke="#2fd6b5" strokeWidth="1.8" />
-      <line x1="14.2" y1="16" x2="17.8" y2="16" stroke="#2fd6b5" strokeWidth="1.8" />
+      <rect x="1" y="1" width="30" height="30" rx="7" fill="#121215" stroke="#3b82f6" strokeWidth="1.6" />
+      <circle cx="11" cy="16" r="3.2" fill="#3b82f6" />
+      <circle cx="21" cy="16" r="3.2" fill="none" stroke="#3b82f6" strokeWidth="1.8" />
+      <line x1="14.2" y1="16" x2="17.8" y2="16" stroke="#3b82f6" strokeWidth="1.8" />
     </svg>
   );
 }
@@ -39,7 +39,7 @@ export default function Header() {
           <BrandMark />
           <span>
             Dev4AIBots
-            <span className="brand-sub">REGISTERED MICRO ENTERPRISE · IN</span>
+            <span className="brand-sub">registered micro enterprise · india</span>
           </span>
         </Link>
         <nav className="nav" aria-label="Primary">

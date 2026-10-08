@@ -41,6 +41,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <span>© 2026 Dev4AIBots · {SITE.location}</span>
+          <span>Last updated: 8 October 2026</span>
           <span>
             Udyam {SITE.udyamType} · {SITE.udyam}
           </span>
