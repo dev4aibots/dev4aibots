@@ -1,6 +1,8 @@
 # Dev4AIBots — Startup Program Application Pack
 
-Prepared 2026-10-07. Every claim below is limited to verified facts.
+Prepared 2026-10-07 · site rebuilt 2026-10-08 (6 pages: /, /product,
+/engineering, /open-source, /about, /contact). Every claim below is limited
+to verified facts.
 Non-negotiable rule: never imply traction, launch, customers, revenue,
 funding, or functionality that does not exist.
 
@@ -16,7 +18,7 @@ Dev4AIBots is a Udyam-registered Indian micro-enterprise building a two-app plat
 
 ## 100-word description
 
-Dev4AIBots is a registered micro-enterprise building a two-app platform that gives local businesses their customer app. The business app lets owners customize themes, publish announcements, and manage appointment bookings on paid plans; the customer app is free forever, joined via a code, QR, or link, with AI chatbots answering questions, one-click booking, and reviews. Target users are shops, salons, and clinics that depend on aggregators and group chats. Status: company registered; platform in development with status labels; no funding, revenue, or customers yet. Engineering proof: holo-racer, a deployed game, and Pramaan, a Python RAG system — both public on GitHub.
+Dev4AIBots is a registered micro-enterprise building a two-app platform that gives local businesses their customer app. The business app lets owners customize themes, publish announcements, and manage appointment bookings on paid plans; the customer app is free forever, joined via a code, QR, or link, with AI chatbots answering questions, one-click booking, and reviews. Target users are shops, salons, and clinics that depend on aggregators and group chats. Status: company registered; platform in development with per-feature status labels; no funding, revenue, or customers yet. Engineering proof: holo-racer, a deployed game, and Pramaan, a Python RAG system — both public on GitHub.
 
 ---
 
@@ -66,15 +68,19 @@ currently coordinated by phone, WhatsApp, or paper. Secondary (later):
 any local service business that wants a direct customer channel without
 building software.
 
-## Current status
+## Current status (matches the rebuilt site's status labels, 2026-10-08)
 
 - **Company:** Working. Dev4AIBots is a Udyam-registered Micro enterprise
   (UDYAM-GJ-29-0019103), incorporated 13/06/2026, registered 14/06/2026,
   NIC 62 (computer programming, consultancy and related activities),
   based in Bhatiya, Devbhoomi Dwarka, Gujarat, India.
-- **Platform:** In development. Feature statuses: theme customization,
-  announcements, appointment booking, AI chatbots, reviews, code/QR/link
-  join, automations — all Roadmap; platform overall In development.
+- **Platform:** In development. Native Android (Kotlin, MVI, Clerk auth);
+  MVPs implemented and integration-tested for onboarding, dashboard,
+  announcements, services/slots, bookings, AI chatbot (rule-based FAQ,
+  honestly labeled), and code/QR join — public repos and deployment pending.
+  Per-feature labels: In development for all of the above; Roadmap for
+  reviews and automations. Nothing marked Working until published and
+  usable. Source of truth: dev4aibots.com/product.
 - **holo-racer:** Working. Deployed browser game, live in production.
 - **Pramaan:** In development. Python RAG evidence engine, real repo,
   active development.
@@ -117,18 +123,25 @@ repositories) rather than titles: no degrees claimed, no past employers
 claimed, no roles claimed that cannot be verified in a repository. Runs
 engineering, product, and support personally.
 
-## Why Claude — real engineering reasons
+## Why Claude — real engineering reasons (matches the site's "Why Claude" section)
 
-1. **Solo-developer velocity.** Dev4AIBots is one person. Claude Code's
-   agentic coding — multi-file edits, test generation, repo-scale
-   refactoring — is the difference between a solo founder shipping like a
-   small team and shipping like one person. This is already the proven
-   pattern: holo-racer was built with heavy AI-assisted development.
-2. **Product AI, not demo AI.** The platform's per-business chatbots need
-   strong instruction-following, low hallucination rates, and multilingual
-   quality (English/Hindi/Gujarati for the target market). The API is the
-   product's AI layer — not a chatbot wrapper, but grounded Q&A over each
-   business's own data.
+1. **Claude API — the product's AI layer.** The platform's per-business
+   chatbots need strong instruction-following, low hallucination rates, and
+   multilingual quality (English/Hindi/Gujarati for the target market).
+   Planned uses: (a) per-business customer chatbots, grounded via RAG over
+   that business's services/prices/hours; (b) announcement drafting
+   assistance inside the business app; (c) automated claim-verification
+   passes in Pramaan's eval pipeline. Not a chatbot wrapper — grounded Q&A
+   over each business's own data, with usage metering per business from day
+   one.
+2. **Claude Code — solo-developer velocity.** Dev4AIBots is one person.
+   Claude Code's agentic coding — multi-file edits, test generation,
+   repo-scale refactoring — is the difference between a solo founder
+   shipping like a small team and shipping like one person. Already the
+   proven pattern: holo-racer was built with heavy AI-assisted development.
+   Expected to be the primary credit consumer during the build phase
+   (business app, customer app, backend services, plus the evaluation
+   harnesses that keep every status label honest).
 3. **Evaluation discipline.** The company's honesty policy requires measured
    claims; Claude as an evaluation judge (rubric-graded outputs, RAGAS-style
    claim checks in Pramaan) fits the existing eval harness rather than

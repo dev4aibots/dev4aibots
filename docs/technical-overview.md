@@ -1,5 +1,10 @@
 # Technical Overview — holo-racer
 
+Site sync (2026-10-08): the rebuilt /engineering page covers three systems —
+holo-racer (Working), Pramaan (In development), and the platform apps
+(native Android in Kotlin, MVI, Clerk auth — In development, repos not public
+yet). This document remains the holo-racer deep dive.
+
 The strongest real system built by Dev4AIBots. Written at the level a
 senior engineer would review it: architecture, data flow, trade-offs, and
 known limitations. Status: **Working** — deployed to production.
