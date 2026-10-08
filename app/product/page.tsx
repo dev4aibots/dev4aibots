@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import StatusBadge from "@/components/StatusBadge";
 import TwoAppDiagram from "@/components/TwoAppDiagram";
 import { ArrowRight, ShieldCheck } from "@/components/icons";
 import { SITE } from "@/lib/site";
@@ -8,12 +7,12 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Product",
   description:
-    "The Dev4AIBots two-app platform: a business app for owners and a free customer app for their customers. Business app vs customer app compared; every feature honestly labeled — in development or roadmap.",
+    "The Dev4AIBots two-app platform: a business app for owners and a free customer app for their customers. Business app vs customer app compared; currently in development.",
   alternates: { canonical: "/product" },
   openGraph: {
     title: "Product · Dev4AIBots",
     description:
-      "Two apps, one direct channel: the business app (paid plans) and the customer app (free forever). Every feature honestly labeled.",
+      "Two apps, one direct channel: the business app (paid plans) and the customer app (free forever). Currently in development.",
     url: `${SITE.domain}/product`,
     type: "website",
   },
@@ -21,14 +20,14 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Product · Dev4AIBots",
     description:
-      "Two apps, one direct channel. Every feature honestly labeled: working, in development, or roadmap.",
+      "Two apps, one direct channel. Currently in development.",
   },
 };
 
 type Row = {
   feature: string;
   app: string;
-  status: "working" | "development" | "roadmap";
+  status: "In development" | "Roadmap";
   note: string;
 };
 
@@ -36,49 +35,49 @@ const FEATURES: Row[] = [
   {
     feature: "Business app (owner console)",
     app: "Business",
-    status: "development",
+    status: "In development",
     note: "MVP implemented and verified: onboarding, dashboard, announcements, services/slots, bookings. Public repo + deployment pending.",
   },
   {
     feature: "Theme customization",
     app: "Business",
-    status: "development",
+    status: "In development",
     note: "MVP: owner sets brand color + logo text; customer app renders in the business theme. Repo pending.",
   },
   {
     feature: "Announcements",
     app: "Business → Customer",
-    status: "development",
+    status: "In development",
     note: "MVP: CRUD + publish toggle in business app; published items feed the customer app via API. Repo pending.",
   },
   {
     feature: "Appointment booking",
     app: "Customer",
-    status: "development",
+    status: "In development",
     note: "MVP: service → slot → details → confirm flow, my-bookings lookup + cancel; integration-tested end to end. Repo pending.",
   },
   {
     feature: "AI chatbots",
     app: "Customer",
-    status: "development",
+    status: "In development",
     note: "MVP: rule-based FAQ assistant (hours, services, booking help), honestly labeled in-product. A more capable AI assistant is on the roadmap.",
   },
   {
     feature: "Reviews",
     app: "Customer",
-    status: "roadmap",
+    status: "Roadmap",
     note: "Local reviews visible to the business and its customers.",
   },
   {
     feature: "Code / QR / link join",
     app: "Customer",
-    status: "development",
+    status: "In development",
     note: "MVP: 6-char business code + QR card; join validated against the business API. Repo pending.",
   },
   {
     feature: "Automations",
     app: "Business",
-    status: "roadmap",
+    status: "Roadmap",
     note: "Reminders and follow-ups driven by bookings and activity.",
   },
 ];
@@ -144,7 +143,7 @@ export default function Product() {
       <section className="hero" aria-labelledby="product-title">
         <div className="container">
           <span className="section-label">
-            product · status: in development
+            product
           </span>
           <h1 id="product-title">
             Two apps. One direct channel between a business and its customers.
@@ -160,18 +159,12 @@ export default function Product() {
               customers join a business with a code, QR, or link, then chat
               with AI assistants, book appointments, and leave reviews. The
               platform is in development — its repositories are not public
-              yet, and nothing below is marked &ldquo;working&rdquo; until it
-              is published and usable.
+              yet, and nothing is deployed.
             </p>
           </div>
           <div className="hero-meta" aria-label="Platform facts">
-            <span className="meta-tag">
-              <span className="dot" aria-hidden="true" />
-              platform: in development
-            </span>
             <span className="meta-tag">repos not public yet</span>
             <span className="meta-tag">native Android · Kotlin</span>
-            <span className="meta-tag">statuses track published code</span>
           </div>
         </div>
       </section>
@@ -212,12 +205,12 @@ export default function Product() {
       <section className="section" aria-labelledby="features">
         <div className="container">
           <span className="section-label">feature status</span>
-          <h2 id="features">Every feature, honestly labeled.</h2>
+          <h2 id="features">Where each feature stands.</h2>
           <p className="lede">
-            &ldquo;Working&rdquo; means shipped and usable. &ldquo;In
-            development&rdquo; means being built now. &ldquo;Roadmap&rdquo;
-            means planned, with design and scope but no implementation yet.
-            Statuses change only when code is published.
+            The platform is in development. Features marked &ldquo;In
+            development&rdquo; are being built now; features marked
+            &ldquo;Roadmap&rdquo; are planned but not yet started. This list
+            changes only when code ships.
           </p>
           <div className="table-wrap">
             <table>
@@ -238,9 +231,7 @@ export default function Product() {
                       <span className="note">{f.app} side</span>
                     </td>
                     <td className="muted-cell">{f.app}</td>
-                    <td>
-                      <StatusBadge status={f.status} />
-                    </td>
+                    <td className="muted-cell">{f.status}</td>
                     <td className="muted-cell">{f.note}</td>
                   </tr>
                 ))}
@@ -248,13 +239,11 @@ export default function Product() {
             </table>
           </div>
           <div className="note-box">
-            <strong>What &ldquo;in development&rdquo; means here.</strong> The
-            business and customer app MVPs are implemented and
-            integration-tested — native Android in Kotlin, MVI architecture,
-            Clerk auth — but their repositories are not public yet and
-            nothing is deployed, so nothing is marked &ldquo;working&rdquo;
-            until it is published and usable. This page is the source of truth
-            for what exists.
+            <strong>Where the apps stand.</strong> The business and customer
+            app MVPs are implemented and integration-tested — native Android
+            in Kotlin, MVI architecture, Clerk auth — but their repositories
+            are not public yet and nothing is deployed. This page describes
+            what exists.
           </div>
         </div>
       </section>
@@ -270,7 +259,7 @@ export default function Product() {
       <section className="section" aria-labelledby="honesty">
         <div className="container">
           <span className="section-label">the honesty policy</span>
-          <h2 id="honesty">Why the labels are non-negotiable.</h2>
+          <h2 id="honesty">Why honesty is non-negotiable.</h2>
           <div className="panel" style={{ maxWidth: "75ch" }}>
             <div className="panel-head">
               <span className="panel-icon" aria-hidden="true">
@@ -280,7 +269,7 @@ export default function Product() {
             </div>
             <p style={{ margin: 0, fontSize: "0.93rem" }}>
               A number on this site is either measured or it does not appear.
-              A feature is &ldquo;working&rdquo; only when it is published and
+              A feature counts as shipped only when it is published and
               usable — never when it is &ldquo;almost done.&rdquo; The founder
               has twice refused requests to present non-working products as
               launched; that refusal is written company policy and it applies

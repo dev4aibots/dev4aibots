@@ -7,10 +7,10 @@ CSS — no UI framework, no heavy deps.
 
 ## Honesty policy (non-negotiable)
 
-Every status on this site is labeled **Working / In development / Roadmap**.
-We never imply traction, launch, customers, revenue, funding, or
-functionality that does not exist. Company facts live in
-[`lib/site.ts`](lib/site.ts) — a claim on a page must be traceable there.
+The site states plainly what is built and what is not — no status-label
+system, no launch claims. We never imply traction, launch, customers,
+revenue, funding, or functionality that does not exist. Company facts live
+in [`lib/site.ts`](lib/site.ts) — a claim on a page must be traceable there.
 
 ## Develop
 
@@ -23,14 +23,14 @@ npm run build    # production build
 
 ## Structure
 
-- `app/` — routes: `/` `/product` `/engineering` `/open-source` `/about`
+- `app/` — routes: `/` `/product` `/open-source` `/about`
   `/contact`, plus `robots.ts` and `sitemap.ts`
-- `components/` — Header, Footer, StatusBadge, TwoAppDiagram (hand-built SVG)
+- `components/` — Header, Footer, TwoAppDiagram (hand-built SVG)
 - `lib/site.ts` — single source of truth for company facts
 - `docs/startup-program-application.md` — program application pack
   (descriptions, Q&A, credit usage)
-- `docs/technical-overview.md` — senior-level architecture write-up of
-  holo-racer, the strongest real system
+- `docs/technical-overview.md` — architecture write-up of holo-racer,
+  the strongest open-source system
 
 ## Deployment
 

@@ -1,5 +1,5 @@
 // Single source of truth for company facts. Every claim on this site
-// must be traceable to a verified fact — see the honesty policy in README.md.
+// must be traceable to a verified fact.
 
 export const SITE = {
   name: "Dev4AIBots",

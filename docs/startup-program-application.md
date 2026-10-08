@@ -1,7 +1,7 @@
 # Dev4AIBots — Startup Program Application Pack
 
-Prepared 2026-10-07 · site rebuilt 2026-10-08 (6 pages: /, /product,
-/engineering, /open-source, /about, /contact). Every claim below is limited
+Prepared 2026-10-07 · site rebuilt 2026-10-08 (5 pages: /, /product,
+/open-source, /about, /contact). Every claim below is limited
 to verified facts.
 Non-negotiable rule: never imply traction, launch, customers, revenue,
 funding, or functionality that does not exist.
@@ -14,11 +14,12 @@ Dev4AIBots is a registered Indian micro-enterprise building a two-app platform t
 
 ## 50-word description
 
-Dev4AIBots is a Udyam-registered Indian micro-enterprise building a two-app platform for local businesses. Owners customize and publish their branded customer app — announcements, appointment booking, AI chatbots, reviews — while customers join free via code or QR link. Solo-founded by Varamal Devraj Kheraj; platform in development; engineering proven in production.
+Dev4AIBots is a Udyam-registered Indian micro-enterprise building a two-app platform for local businesses. Owners customize and publish their branded customer app — announcements, appointment booking, AI chatbots, reviews — while customers join free via code or QR link. Solo-founded by Varamal Devraj Kheraj; platform in development; open-source
+work published on GitHub.
 
 ## 100-word description
 
-Dev4AIBots is a registered micro-enterprise building a two-app platform that gives local businesses their customer app. The business app lets owners customize themes, publish announcements, and manage appointment bookings on paid plans; the customer app is free forever, joined via a code, QR, or link, with AI chatbots answering questions, one-click booking, and reviews. Target users are shops, salons, and clinics that depend on aggregators and group chats. Status: company registered; platform in development with per-feature status labels; no funding, revenue, or customers yet. Engineering proof: holo-racer, a deployed game, and Pramaan, a Python RAG system — both public on GitHub.
+Dev4AIBots is a registered micro-enterprise building a two-app platform that gives local businesses their customer app. The business app lets owners customize themes, publish announcements, and manage appointment bookings on paid plans; the customer app is free forever, joined via a code, QR, or link, with AI chatbots answering questions, one-click booking, and reviews. Target users are shops, salons, and clinics that depend on aggregators and group chats. Status: company registered; platform in development; no funding, revenue, or customers yet. Open source: holo-racer, Pramaan, and four tooling repositories — public on GitHub, described for what they are.
 
 ---
 
@@ -55,10 +56,9 @@ Two applications, one platform:
   code/QR/link, chat with that business's AI assistant, book appointments in
   one tap, receive announcements, leave reviews.
 
-Status: **in development**. Per-feature status labels (Working / In
-development / Roadmap) are published on the Product page and updated when
-code ships. Public repositories for the platform are not yet published;
-no demo exists yet.
+Status: **in development**. The Product page describes where each feature
+stands, and that description changes only when code ships. Public
+repositories for the platform are not yet published; no demo exists yet.
 
 ## Target users
 
@@ -68,22 +68,22 @@ currently coordinated by phone, WhatsApp, or paper. Secondary (later):
 any local service business that wants a direct customer channel without
 building software.
 
-## Current status (matches the rebuilt site's status labels, 2026-10-08)
+## Current status (matches the rebuilt site, 2026-10-08)
 
-- **Company:** Working. Dev4AIBots is a Udyam-registered Micro enterprise
+- **Company:** registered. Dev4AIBots is a Udyam-registered Micro enterprise
   (UDYAM-GJ-29-0019103), incorporated 13/06/2026, registered 14/06/2026,
   NIC 62 (computer programming, consultancy and related activities),
   based in Bhatiya, Devbhoomi Dwarka, Gujarat, India.
-- **Platform:** In development. Native Android (Kotlin, MVI, Clerk auth);
+- **Platform:** in development. Native Android (Kotlin, MVI, Clerk auth);
   MVPs implemented and integration-tested for onboarding, dashboard,
   announcements, services/slots, bookings, AI chatbot (rule-based FAQ,
   honestly labeled), and code/QR join — public repos and deployment pending.
-  Per-feature labels: In development for all of the above; Roadmap for
-  reviews and automations. Nothing marked Working until published and
-  usable. Source of truth: dev4aibots.com/product.
-- **holo-racer:** Working. Deployed browser game, live in production.
-- **Pramaan:** In development. Python RAG evidence engine, real repo,
-  active development.
+  Reviews and automations are planned, not yet started. Source of truth:
+  dev4aibots.com/product.
+- **holo-racer:** open-source browser game with a real-time computer-vision
+  control pipeline.
+- **Pramaan:** open-source Python RAG evidence engine, real repo, active
+  development.
 - **Traction:** none claimed — see below.
 
 ## Technical differentiation
@@ -99,9 +99,9 @@ building software.
    real-time computer-vision pipeline (MediaPipe in a Web Worker, gesture
    filtering, Three.js rendering) deployed to production; Pramaan is an
    authorization-first RAG architecture. Both public, both inspectable.
-4. **Honesty as process.** Status labels on every feature, public repos,
-   measured claims only. For a program evaluating early founders, the
-   verifiable record is the pitch.
+4. **Honesty as process.** Plain-language status statements on the site,
+   public repos, measured claims only. For a program evaluating early
+   founders, the verifiable record is the pitch.
 
 ## Traction — verified facts only
 
@@ -123,7 +123,7 @@ repositories) rather than titles: no degrees claimed, no past employers
 claimed, no roles claimed that cannot be verified in a repository. Runs
 engineering, product, and support personally.
 
-## Why Claude — real engineering reasons (matches the site's "Why Claude" section)
+## Why Claude — real engineering reasons
 
 1. **Claude API — the product's AI layer.** The platform's per-business
    chatbots need strong instruction-following, low hallucination rates, and
@@ -141,7 +141,7 @@ engineering, product, and support personally.
    proven pattern: holo-racer was built with heavy AI-assisted development.
    Expected to be the primary credit consumer during the build phase
    (business app, customer app, backend services, plus the evaluation
-   harnesses that keep every status label honest).
+   harnesses that keep claims on the site honest).
 3. **Evaluation discipline.** The company's honesty policy requires measured
    claims; Claude as an evaluation judge (rubric-graded outputs, RAGAS-style
    claim checks in Pramaan) fits the existing eval harness rather than
@@ -151,7 +151,7 @@ engineering, product, and support personally.
 
 - **Claude Code:** day-to-day construction of the platform — business app,
   customer app, backend services — plus test generation and the evaluation
-  harnesses that keep every status label honest. Expected to be the primary
+  harnesses that keep claims on the site honest. Expected to be the primary
   credit consumer during the build phase.
 - **Claude API:** (a) per-business customer chatbots, grounded via RAG over
   that business's services/prices/hours; (b) announcement drafting
@@ -190,8 +190,8 @@ Estimates, labeled as such — actuals depend on build scope and pilot count:
 
 **1. Is the product launched?**
 No. The two-app platform is in development; its public repositories are not
-yet published and no demo exists. The site's Product page carries
-per-feature status labels so this is unambiguous.
+yet published and no demo exists. The site's Product page describes where
+each feature stands, so this is unambiguous.
 
 **2. Do you have customers, revenue, or funding?**
 No to all three. We state this explicitly rather than omitting it.
@@ -231,8 +231,8 @@ non-engineering uses.
 
 **9. What does success look like in 12 months?**
 Targets, not promises: platform MVP with pilot local businesses running
-their own branded customer apps; per-feature statuses moved from Roadmap
-to Working in public; chatbot quality measured, not asserted. The honest
+their own branded customer apps; the site's feature list updated as code
+ships; chatbot quality measured, not asserted. The honest
 version of this answer is also the plan.
 
 **10. Why should a program back a solo founder with no traction?**

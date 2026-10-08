@@ -1,27 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import StatusBadge from "@/components/StatusBadge";
 import TwoAppDiagram from "@/components/TwoAppDiagram";
 import PhoneMockup from "@/components/PhoneMockup";
 import {
   ArrowRight,
   Users,
   Zap,
-  MessageCircle,
   PhoneIcon,
   CalendarCheck,
 } from "@/components/icons";
-import { SITE, REPOS } from "@/lib/site";
+import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Dev4AIBots — Branded customer apps for local businesses",
   description:
-    "Dev4AIBots is a Udyam-registered Indian micro enterprise building a two-app platform: local businesses publish their own branded customer app with AI chatbots, bookings, and announcements. In development — honestly labeled.",
+    "Dev4AIBots is a Udyam-registered Indian micro enterprise building a two-app platform: local businesses publish their own branded customer app with AI chatbots, bookings, and announcements. Currently in development.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Dev4AIBots — Branded customer apps for local businesses",
     description:
-      "A two-app platform that gives local businesses their own branded customer app. AI chatbots, one-click bookings, announcements — in development, honestly labeled.",
+      "A two-app platform that gives local businesses their own branded customer app. AI chatbots, one-click bookings, announcements — currently in development.",
     url: SITE.domain,
     type: "website",
   },
@@ -29,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Dev4AIBots — Branded customer apps for local businesses",
     description:
-      "A two-app platform that gives local businesses their own branded customer app. In development — honestly labeled.",
+      "A two-app platform that gives local businesses their own branded customer app. Currently in development.",
   },
 };
 
@@ -40,7 +38,7 @@ const FAQS = [
   },
   {
     q: "Is the platform launched?",
-    a: "No. The two-app platform is in development: its repositories are not public yet and nothing is deployed. Dev4AIBots claims no funding, no revenue, and no customers. The company publishes per-feature status labels — Working, In development, Roadmap — on the Product page, updated when code ships.",
+    a: "No. The two-app platform is in development: its repositories are not public yet and nothing is deployed. Dev4AIBots claims no funding, no revenue, and no customers. The Product page describes where each feature stands, and that description changes only when code ships.",
   },
   {
     q: "How do customers join a business's app?",
@@ -52,7 +50,7 @@ const FAQS = [
   },
   {
     q: "Why should I trust an early-stage company?",
-    a: "Check the verifiable record instead of the pitch: a published Udyam registration number, a public GitHub organization with real commit history, a deployed and playable game (holo-racer), and a site-wide honesty policy that labels every feature Working, In development, or Roadmap. Dev4AIBots has twice refused to present non-working products as launched — that refusal is documented policy.",
+    a: "Check the verifiable record instead of the pitch: a published Udyam registration number, a public GitHub organization with real commit history, and a stated policy of saying exactly what is built and what is not. Dev4AIBots has twice refused to present non-working products as launched.",
   },
   {
     q: "How can I reach Dev4AIBots?",
@@ -94,9 +92,7 @@ export default function Home() {
                 and clinics: the owner publishes a branded customer app — AI
                 chatbots, one-click booking, announcements, reviews — and
                 customers join it free with a code or QR. No aggregator in
-                between. The platform is{" "}
-                <strong>in development</strong>; everything on this site is
-                labeled for what it actually is.
+                between. The platform is currently in development.
               </p>
               <div className="hero-actions">
                 <Link className="btn" href="/contact">
@@ -105,9 +101,6 @@ export default function Home() {
                 <a className="btn btn-ghost" href="#how">
                   How it works
                 </a>
-                <Link className="card-link" href="/engineering">
-                  Engineering proof <ArrowRight size={16} />
-                </Link>
               </div>
               <div className="hero-meta" aria-label="Company facts">
                 <span className="meta-tag">
@@ -116,7 +109,6 @@ export default function Home() {
                 </span>
                 <span className="meta-tag">solo-founded</span>
                 <span className="meta-tag">{SITE.location}</span>
-                <span className="meta-tag">platform: in development</span>
               </div>
             </div>
             <PhoneMockup />
@@ -138,8 +130,7 @@ export default function Home() {
               business app where owners customize their own branded customer
               app, and a free customer app where their customers join via a
               code, QR, or link. The platform is in development — not launched,
-              with no customers or revenue yet — and every feature is labeled
-              Working, In development, or Roadmap.
+              with no customers or revenue yet.
             </p>
           </div>
         </div>
@@ -210,7 +201,7 @@ export default function Home() {
           </div>
           <p style={{ marginTop: "1.5rem" }}>
             <Link href="/product" className="card-link">
-              The full product, with per-feature status <ArrowRight size={16} />
+              The full product <ArrowRight size={16} />
             </Link>
           </p>
         </div>
@@ -232,10 +223,7 @@ export default function Home() {
                 01
               </span>
               <div className="step-body">
-                <h3>
-                  The owner sets up their business app{" "}
-                  <StatusBadge status="roadmap" />
-                </h3>
+                <h3>The owner sets up their business app</h3>
                 <p>
                   Theme and branding, services and prices, announcements —
                   configured once, updated anytime.
@@ -247,10 +235,7 @@ export default function Home() {
                 02
               </span>
               <div className="step-body">
-                <h3>
-                  The platform issues a business code and QR{" "}
-                  <StatusBadge status="roadmap" />
-                </h3>
+                <h3>The platform issues a business code and QR</h3>
                 <p>
                   Each business gets a short code, a QR card, and a shareable
                   link — printed at the counter or sent by message.
@@ -262,10 +247,7 @@ export default function Home() {
                 03
               </span>
               <div className="step-body">
-                <h3>
-                  Customers join free and stay connected{" "}
-                  <StatusBadge status="roadmap" />
-                </h3>
+                <h3>Customers join free and stay connected</h3>
                 <p>
                   They chat with the business&apos;s AI assistant, book
                   appointments in one tap, read announcements, and leave
@@ -278,10 +260,7 @@ export default function Home() {
                 04
               </span>
               <div className="step-body">
-                <h3>
-                  The business sees everything flow back{" "}
-                  <StatusBadge status="roadmap" />
-                </h3>
+                <h3>The business sees everything flow back</h3>
                 <p>
                   Bookings, reviews, and messages land in the business app —
                   the direct customer relationship, owned end to end.
@@ -292,95 +271,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROOF — asymmetric bento */}
-      <section className="section" aria-labelledby="proof">
+      {/* OUR WORK — compact teaser */}
+      <section className="section" aria-labelledby="work">
         <div className="container">
-          <span className="section-label">proof, not promises</span>
-          <h2 id="proof">What we have actually built.</h2>
+          <span className="section-label">our work</span>
+          <h2 id="work">Real code, in public.</h2>
           <p className="lede">
-            No funding, no revenue, no customers yet — we state that plainly.
-            What we can show is real engineering, in public repositories, with
-            production deployments.
+            Alongside the platform, Dev4AIBots publishes open-source work on
+            GitHub — from a gesture-controlled 3D racing game to a multi-modal
+            RAG engine and tooling for AI systems. Each repository is described
+            for what it is and does, nothing more.
           </p>
-          <div className="bento">
-            <article className="bento-main">
-              <StatusBadge status="working" />
-              <h3>holo-racer</h3>
-              <p>
-                A webcam-controlled 3D racing game: Vite + TypeScript +
-                Three.js, with MediaPipe hand tracking running in a Web
-                Worker, geometric gesture derivation, filtering and debounce
-                stages, and production deploys. Deployed and playable in the
-                browser — our strongest engineering artifact.
-              </p>
-              <div className="stat-row">
-                <div className="stat">
-                  <div className="num">60fps</div>
-                  <div className="cap">rendering target</div>
-                </div>
-                <div className="stat">
-                  <div className="num">worker</div>
-                  <div className="cap">vision off the main thread</div>
-                </div>
-                <div className="stat">
-                  <div className="num">live</div>
-                  <div className="cap">production deploys on Vercel</div>
-                </div>
-              </div>
-              <div className="bento-foot">
-                <a
-                  className="card-link"
-                  href={REPOS.holoRacerLive}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Play the live demo <ArrowRight size={16} />
-                </a>
-                <a
-                  className="card-link"
-                  href={REPOS.holoRacer}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Repository <ArrowRight size={16} />
-                </a>
-              </div>
-            </article>
-            <div className="bento-side">
-              <article className="bento-cell">
-                <StatusBadge status="development" />
-                <h3>Pramaan</h3>
-                <p>
-                  A self-hosted, multi-modal RAG evidence engine in Python:
-                  authorization before retrieval, hybrid vector + keyword
-                  search with reranking, and claim verification.
-                </p>
-                <div className="bento-foot">
-                  <a
-                    className="card-link"
-                    href={REPOS.pramaan}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Repository <ArrowRight size={16} />
-                  </a>
-                </div>
-              </article>
-              <article className="bento-cell">
-                <StatusBadge status="working" />
-                <h3>Open source, honestly labeled</h3>
-                <p>
-                  Two real projects; the rest are learning builds from
-                  coursework — labeled exactly that way.
-                </p>
-                <div className="bento-foot">
-                  <Link className="card-link" href="/open-source">
-                    Browse the repos <ArrowRight size={16} />
-                  </Link>
-                </div>
-              </article>
-            </div>
-          </div>
+          <p>
+            <Link href="/open-source" className="card-link">
+              Browse our open source <ArrowRight size={16} />
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -484,9 +390,9 @@ export default function Home() {
             <div>
               <h3 style={{ margin: "0 0 0.35rem" }}>{SITE.founder}</h3>
               <p style={{ margin: 0 }}>
-                Solo founder of Dev4AIBots, based in {SITE.location}. The
-                background is documented through public work — the holo-racer
-                and Pramaan repositories — not through titles.
+                Solo founder of Dev4AIBots, based in {SITE.location}. One
+                person, full accountability: engineering, product, and
+                support are the same inbox.
               </p>
             </div>
           </div>

@@ -1,9 +1,8 @@
 # Technical Overview — holo-racer
 
-Site sync (2026-10-08): the rebuilt /engineering page covers three systems —
-holo-racer (Working), Pramaan (In development), and the platform apps
-(native Android in Kotlin, MVI, Clerk auth — In development, repos not public
-yet). This document remains the holo-racer deep dive.
+Site sync (2026-10-08): the site's "Our Work" page (route /open-source)
+lists the open-source repositories — holo-racer, Pramaan, and four
+tooling repos. This document remains the holo-racer deep dive.
 
 The strongest real system built by Dev4AIBots. Written at the level a
 senior engineer would review it: architecture, data flow, trade-offs, and
@@ -137,7 +136,7 @@ Dev4AIBots platform:
   habit that applies to any client-heavy app.
 - **Evaluation before claims** — thresholds are tested, deploys are
   verified, limitations are written down. This is the process behind the
-  status labels on the company site.
+  plain-language status statements on the company site.
 - **Solo shipping** — scoped, built, tested, deployed, and documented by
   one person with AI-assisted development. That is the operating model for
   the platform build.

@@ -4,7 +4,6 @@ import { SITE } from "@/lib/site";
 const PAGES = [
   "/",
   "/product",
-  "/engineering",
   "/open-source",
   "/about",
   "/contact",

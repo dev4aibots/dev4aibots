@@ -11,15 +11,14 @@ export default function Footer() {
             <p style={{ fontSize: "0.92rem", maxWidth: "30rem" }}>
               A Udyam-registered Indian micro enterprise building a two-app
               platform that gives local businesses their own branded customer
-              app. Honest about status: everything here is labeled working, in
-              development, or roadmap.
+              app. Honest about status: we say plainly what is built and what
+              is not.
             </p>
           </div>
           <div>
             <h4>Site</h4>
             <ul>
               <li><Link href="/product">Product</Link></li>
-              <li><Link href="/engineering">Engineering</Link></li>
               <li><Link href="/open-source">Open Source</Link></li>
               <li><Link href="/about">About</Link></li>
               <li><Link href="/contact">Contact</Link></li>

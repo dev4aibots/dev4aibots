@@ -45,26 +45,23 @@ export default function About() {
           <p className="lede">
             <strong>{SITE.founder}</strong>, solo founder, based in{" "}
             {SITE.location}. The background is documented through public work
-            — the holo-racer and Pramaan repositories, both built and
-            maintained in the open — rather than through titles. No degrees,
-            no past employers, and no roles claimed that cannot be verified
-            in a repository.
+            — the repositories on the <a href="/open-source">Our Work</a>{" "}
+            page — rather than through titles. No degrees, no past employers,
+            and no roles claimed that cannot be verified in a repository.
           </p>
           <div className="split">
             <div className="panel">
-              <h3>What the record shows</h3>
+              <h3>What the company publishes</h3>
               <ul>
                 <li>
-                  <strong>holo-racer:</strong> a deployed, tested browser game
-                  with a real-time computer-vision control pipeline.
+                  Open-source work on GitHub — from a gesture-controlled 3D
+                  racing game to a RAG evidence engine.
                 </li>
                 <li>
-                  <strong>Pramaan:</strong> a Python RAG system with
-                  authorization-first retrieval and an evaluation harness.
+                  Each repository described for what it is and does — never
+                  more.
                 </li>
-                <li>
-                  Both public on GitHub, both under active development.
-                </li>
+                <li>Public on GitHub, under active development.</li>
               </ul>
             </div>
             <div className="panel">
@@ -76,8 +73,9 @@ export default function About() {
                   <code>{SITE.email}</code>.
                 </li>
                 <li>
-                  The status labels across this site are the founder&apos;s
-                  personal commitment to honest representation.
+                  Honest representation is the founder&apos;s personal
+                  commitment: the company states plainly what is built and
+                  what is not.
                 </li>
               </ul>
             </div>

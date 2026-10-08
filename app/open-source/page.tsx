@@ -1,64 +1,63 @@
 import type { Metadata } from "next";
-import StatusBadge from "@/components/StatusBadge";
 import { ArrowRight } from "@/components/icons";
 import { SITE, REPOS } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Open Source",
+  title: "Our Work",
   description:
-    "Dev4AIBots on GitHub: holo-racer and Pramaan are real projects; the rest are learning builds from coursework — each honestly described for what it is.",
+    "Dev4AIBots on GitHub: holo-racer, Pramaan, enterprise-rag-engine, realtime-voice-ai, mcp-tool-registry, and deep-research-orchestrator — each repository described for what it is and does.",
   alternates: { canonical: "/open-source" },
   openGraph: {
-    title: "Open Source · Dev4AIBots",
+    title: "Our Work · Dev4AIBots",
     description:
-      "Real projects and learning builds, each honestly described for what it is.",
+      "Open-source repositories from Dev4AIBots — described for what they are and what they do.",
     url: `${SITE.domain}/open-source`,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Open Source · Dev4AIBots",
+    title: "Our Work · Dev4AIBots",
     description:
-      "Real projects and learning builds, each honestly described for what it is.",
+      "Open-source repositories from Dev4AIBots — described for what they are and what they do.",
   },
 };
 
-const LEARNING_BUILDS = [
+const WORK = [
+  {
+    name: "holo-racer",
+    what: "A 3D racing game you steer with hand gestures, tracked live from your webcam.",
+    stack: "TypeScript, Three.js, MediaPipe",
+    href: REPOS.holoRacer,
+  },
+  {
+    name: "Pramaan",
+    what: "A multi-modal RAG engine that answers questions with cited evidence.",
+    stack: "Python",
+    href: REPOS.pramaan,
+  },
   {
     name: "enterprise-rag-engine",
-    what: "Production RAG chatbot skeleton — reference build from coursework.",
-  },
-  {
-    name: "agentic-cli-workspace",
-    what: "Terminal-native coding agent — reference build from coursework.",
-  },
-  {
-    name: "semantic-code-search",
-    what: "RAG over a codebase — reference build from coursework.",
+    what: "Reference implementation of a RAG chatbot with an evaluation harness.",
+    stack: "TypeScript",
+    href: `${SITE.github}/enterprise-rag-engine`,
   },
   {
     name: "realtime-voice-ai",
-    what: "Realtime voice assistant — reference build from coursework.",
-  },
-  {
-    name: "infra-diagnostics-agent",
-    what: "DevOps troubleshooting agent — reference build from coursework.",
-  },
-  {
-    name: "deep-research-orchestrator",
-    what: "Multi-agent research pipeline — reference build from coursework.",
-  },
-  {
-    name: "multimodal-vision-qa",
-    what: "Document visual Q&A — reference build from coursework.",
+    what: "Low-latency conversational voice AI pipeline over WebSockets.",
+    stack: "JavaScript, WebSockets",
+    href: `${SITE.github}/realtime-voice-ai`,
   },
   {
     name: "mcp-tool-registry",
-    what: "Internal MCP tool registry — reference build from coursework.",
+    what: "A registry standardizing tool execution via the Model Context Protocol.",
+    stack: "TypeScript",
+    href: `${SITE.github}/mcp-tool-registry`,
   },
   {
-    name: "llm-finetuning-framework",
-    what: "Fine-tuning scaffolding — reference build from coursework.",
+    name: "deep-research-orchestrator",
+    what: "Multi-agent orchestration for long-horizon research tasks.",
+    stack: "Python",
+    href: `${SITE.github}/deep-research-orchestrator`,
   },
 ];
 
@@ -68,16 +67,14 @@ export default function OpenSource() {
       <section className="hero" aria-labelledby="oss-title">
         <div className="container">
           <span className="section-label">open source</span>
-          <h1 id="oss-title">Our code, labeled for what it actually is.</h1>
+          <h1 id="oss-title">Our work, in public.</h1>
           <p className="lede">
-            Everything public lives at{" "}
+            Alongside the platform, Dev4AIBots publishes open-source work at{" "}
             <a href={SITE.github} target="_blank" rel="noopener noreferrer">
               github.com/dev4aibots
             </a>
-            . Two repositories are real projects; the rest are learning builds
-            from coursework and tutorials. We label them that way because a
-            reviewer who opens a repo should find exactly what we said
-            they&apos;d find.
+            . Each repository below is described for what it is and what it
+            does — nothing more.
           </p>
           <div className="note-box">
             <strong>Licensing.</strong> These repositories are public for
@@ -88,97 +85,26 @@ export default function OpenSource() {
         </div>
       </section>
 
-      <section className="section" aria-labelledby="real">
+      <section className="section" aria-labelledby="repos">
         <div className="container">
-          <span className="section-label">real projects</span>
-          <h2 id="real">Which repositories are real projects?</h2>
-          <div className="bento">
-            <article className="bento-main">
-              <StatusBadge status="working" />
-              <h3>holo-racer</h3>
-              <p>
-                Webcam-controlled 3D racing game. Vite + TypeScript + Three.js,
-                MediaPipe hand tracking in a Web Worker, geometric gesture
-                pipeline, production deploys on Vercel. Our strongest
-                engineering artifact — the one we point reviewers at first.
-              </p>
-              <div className="bento-foot">
-                <a
-                  className="card-link"
-                  href={REPOS.holoRacer}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/dev4aibots/holo-racer <ArrowRight size={16} />
-                </a>
-                <a
-                  className="card-link"
-                  href={REPOS.holoRacerLive}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live demo <ArrowRight size={16} />
-                </a>
-              </div>
-            </article>
-            <div className="bento-side">
-              <article className="bento-cell">
-                <StatusBadge status="development" />
-                <h3>Pramaan</h3>
-                <p>
-                  Self-hosted multi-modal RAG evidence engine in Python.
-                  Authorization before retrieval, hybrid search with
-                  reranking, claim verification. Real project structure; in
-                  active development.
-                </p>
-                <div className="bento-foot">
-                  <a
-                    className="card-link"
-                    href={REPOS.pramaan}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    github.com/dev4aibots/Pramaan <ArrowRight size={16} />
-                  </a>
-                </div>
-              </article>
-              <article className="bento-cell">
-                <StatusBadge status="development" />
-                <h3>Platform apps</h3>
-                <p>
-                  The business and customer app repositories are not public
-                  yet. They will be listed here when published — not before.
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section" aria-labelledby="learning">
-        <div className="container">
-          <span className="section-label">learning builds</span>
-          <h2 id="learning">What are the other repositories?</h2>
-          <p className="lede">
-            Reference implementations — real files, real structure, built to
-            learn a pattern. They are <strong>not</strong> production systems,
-            and we do not present them as such.
-          </p>
+          <span className="section-label">repositories</span>
+          <h2 id="repos">What we publish.</h2>
           <div className="table-wrap">
             <table>
-              <caption>Learning builds — reference implementations</caption>
+              <caption>Dev4AIBots open-source repositories</caption>
               <thead>
                 <tr>
                   <th scope="col">Repository</th>
                   <th scope="col">What it is</th>
+                  <th scope="col">Built with</th>
                 </tr>
               </thead>
               <tbody>
-                {LEARNING_BUILDS.map((r) => (
+                {WORK.map((r) => (
                   <tr key={r.name}>
                     <td>
                       <a
-                        href={`${SITE.github}/${r.name}`}
+                        href={r.href}
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ fontFamily: "var(--mono)", fontSize: "0.85rem" }}
@@ -187,11 +113,22 @@ export default function OpenSource() {
                       </a>
                     </td>
                     <td className="muted-cell">{r.what}</td>
+                    <td className="muted-cell">{r.stack}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+          <p style={{ marginTop: "1.5rem" }}>
+            <a
+              className="card-link"
+              href={SITE.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              All repositories on GitHub <ArrowRight size={16} />
+            </a>
+          </p>
         </div>
       </section>
     </>
