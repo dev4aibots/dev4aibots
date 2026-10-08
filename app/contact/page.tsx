@@ -79,8 +79,8 @@ export default function Contact() {
 
           <div className="note-box" style={{ maxWidth: "42rem" }}>
             <strong>What to write about.</strong> Local businesses interested
-            in the platform, engineers who want to discuss the open-source
-            work, and startup programs — all welcome. Please don&apos;t ask us
+            in the platform and engineers who want to discuss the
+            open-source work — all welcome. Please don&apos;t ask us
             to misrepresent our status; the labels on this site are
             non-negotiable.
           </div>

@@ -61,7 +61,7 @@ const FEATURES: Row[] = [
     feature: "AI chatbots",
     app: "Customer",
     status: "development",
-    note: "MVP: rule-based FAQ assistant (hours, services, booking help), honestly labeled in-product. Claude API upgrade is roadmap.",
+    note: "MVP: rule-based FAQ assistant (hours, services, booking help), honestly labeled in-product. A more capable AI assistant is on the roadmap.",
   },
   {
     feature: "Reviews",

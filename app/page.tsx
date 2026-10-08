@@ -8,6 +8,8 @@ import {
   Users,
   Zap,
   MessageCircle,
+  PhoneIcon,
+  CalendarCheck,
 } from "@/components/icons";
 import { SITE, REPOS } from "@/lib/site";
 
@@ -382,71 +384,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY CLAUDE */}
-      <section className="section" aria-labelledby="why-claude">
+      {/* WHAT CHANGES — outcome-led, normal business section */}
+      <section className="section" aria-labelledby="what-changes">
         <div className="container">
-          <span className="section-label">why claude</span>
-          <h2 id="why-claude">Why is Claude part of the plan?</h2>
+          <span className="section-label">what changes</span>
+          <h2 id="what-changes">Less phone tag. More repeat customers.</h2>
           <p className="lede">
-            A solo founder building a two-app platform needs leverage in two
-            places: the product&apos;s intelligence, and the speed of building
-            it. Claude covers both.
+            Most local businesses run on calls and messages: the same
+            questions about hours and prices, bookings lost to a missed call,
+            offers that never reach the people who would act on them.
+            Dev4AIBots gives each business its own direct channel to its
+            customers.
           </p>
           <div className="split">
             <div className="panel">
               <div className="panel-head">
                 <span className="panel-icon" aria-hidden="true">
-                  <MessageCircle size={20} />
+                  <PhoneIcon size={20} />
                 </span>
-                <h3 style={{ margin: 0 }}>Claude API — the product&apos;s AI</h3>
+                <h3 style={{ margin: 0 }}>Today</h3>
               </div>
               <ul>
+                <li>Customers call for hours, prices, and availability.</li>
+                <li>Bookings depend on someone picking up the phone.</li>
                 <li>
-                  Per-business chatbots grounded in that business&apos;s own
-                  services, hours, and prices — routine questions answered
-                  without the owner&apos;s time.
-                </li>
-                <li>
-                  Announcement drafting assistance inside the business app.
-                </li>
-                <li>
-                  Automated claim-verification passes in Pramaan&apos;s
-                  evaluation pipeline — measured quality, not asserted.
+                  Offers go out on social feeds your customers may never see.
                 </li>
               </ul>
             </div>
             <div className="panel">
               <div className="panel-head">
                 <span className="panel-icon" aria-hidden="true">
-                  <Zap size={20} />
+                  <CalendarCheck size={20} />
                 </span>
-                <h3 style={{ margin: 0 }}>
-                  Claude Code — the founder&apos;s leverage
-                </h3>
+                <h3 style={{ margin: 0 }}>With Dev4AIBots</h3>
               </div>
               <ul>
                 <li>
-                  Day-to-day construction of the platform: business app,
-                  customer app, backend services, test generation.
+                  An AI assistant answers routine questions instantly, inside
+                  your business&apos;s own app.
                 </li>
+                <li>Customers book appointments in one tap, anytime.</li>
                 <li>
-                  The evaluation harnesses that keep every status label on
-                  this site honest.
-                </li>
-                <li>
-                  AI-assisted development is already the proven pattern here —
-                  holo-racer was built that way.
+                  Announcements reach your customers directly — no algorithm
+                  in between.
                 </li>
               </ul>
             </div>
           </div>
           <div className="note-box">
-            <strong>Claude for Startups.</strong> The program fits the
-            company&apos;s exact shape: a solo founder whose constraint is
-            engineering hours, not ideas. Credits would go 100% to engineering
-            velocity and product AI — never marketing, salaries, or
-            infrastructure. The full application pack is in the site&apos;s
-            docs.
+            <strong>Simple pricing.</strong> The customer app is free for your
+            customers, forever. Businesses choose a plan for their branded
+            app — details coming as we approach launch.
           </div>
         </div>
       </section>
