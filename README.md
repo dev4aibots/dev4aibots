@@ -5,7 +5,7 @@
 
 <p>
   <a href="https://dev4aibots.com"><img src="https://img.shields.io/badge/Website-dev4aibots.com-0A66C2?style=for-the-badge"></a>
-  <a href="https://linkedin.com/in/devraj-gadhvi-793338388"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/devraj0770"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="mailto:hello@dev4aibots.com"><img src="https://img.shields.io/badge/Email-hello@dev4aibots.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </p>
 
