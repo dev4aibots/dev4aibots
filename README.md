@@ -1,44 +1,65 @@
-# Dev4AIBots
+# Hi, I'm Devraj Gadhvi 👋
 
-**AI systems for local businesses.** Dev4AIBots is a Udyam-registered micro enterprise
-(UDYAM-GJ-29-0019103, India) founded and built solo by **Varamal Devraj Kheraj**.
+**AI Engineer — Agentic AI, RAG & LLM Systems**
+
+I build production-oriented AI systems: autonomous agents, retrieval-augmented generation pipelines, MCP tooling, and real-time voice AI — every system below has a **live demo** you can try right now.
+
+- 🏢 Founder of **Dev4AIBots** — a Udyam-registered micro enterprise (UDYAM-GJ-29-0019103), founded June 2026
+- 📍 Based in India (UTC+5:30) — **open to remote roles worldwide, available for immediate start**
+- 🎯 Looking for entry-level **AI Engineer** roles (remote / hybrid / contract / freelance)
 
 <p>
-  <a href="https://dev4aibots.com"><img src="https://img.shields.io/badge/Website-dev4aibots.com-0A66C2?style=for-the-badge"></a>
+  <a href="https://dev4aibots.com"><img src="https://img.shields.io/badge/Portfolio-dev4aibots.com-0A66C2?style=for-the-badge"></a>
   <a href="https://www.linkedin.com/in/devraj0770"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="mailto:hello@dev4aibots.com"><img src="https://img.shields.io/badge/Email-hello@dev4aibots.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </p>
 
-## What we're building
+## 🚀 Systems — all live, all open source
 
-A two-app platform for local businesses (shops, parlours, services):
+| # | System | What it does | Live demo | Code |
+|---|--------|--------------|-----------|------|
+| 1 | **Semantic Code Search** | Repository-scale search engine mapping natural language to AST nodes | [▶ Demo](https://semantic-code-search-demo.vercel.app) | [Repo](https://github.com/dev4aibots/semantic-code-search) |
+| 2 | **Deep Research Orchestrator** | Agentic workflow for long-horizon planning and deep web research | [▶ Demo](https://deep-research-orchestrator-demo.vercel.app) | [Repo](https://github.com/dev4aibots/deep-research-orchestrator) |
+| 3 | **Agentic CLI Workspace** | Production-oriented coding agent for repository analysis, implementation, and testing | [▶ Demo](https://agentic-cli-workspace-demo.vercel.app) | [Repo](https://github.com/dev4aibots/agentic-cli-workspace) |
+| 4 | **Enterprise RAG Engine** | Production-oriented Retrieval-Augmented Generation (RAG) system with evaluation | [▶ Demo](https://enterprise-rag-engine-demo.vercel.app) | [Repo](https://github.com/dev4aibots/enterprise-rag-engine) |
+| 5 | **MCP Tool Registry** | Model Context Protocol (MCP) implementation standardizing tool execution | [▶ Demo](https://mcp-tool-registry-demo.vercel.app) | [Repo](https://github.com/dev4aibots/mcp-tool-registry) |
+| 6 | **Infra Diagnostics Agent** | Autonomous DevOps agent for root-cause analysis via Kubernetes and Prometheus | [▶ Demo](https://infra-diagnostics-agent-demo.vercel.app) | [Repo](https://github.com/dev4aibots/infra-diagnostics-agent) |
+| 7 | **PRAMAAN** | Zero-trust security architecture for RAG — evidence must be earned before it is used | [▶ Demo](https://pramaan-dev4aibots.vercel.app) | [Repo](https://github.com/dev4aibots/pramaan) |
+| 8 | **Realtime Voice AI** | Low-latency conversational voice AI leveraging WebSockets | [▶ Demo](https://realtime-voice-ai-demo-dev4aibots.vercel.app) | [Repo](https://github.com/dev4aibots/realtime-voice-ai) |
+| 9 | **Multimodal Vision QA** | Vision-first AI pipeline that extracts structure from PDFs and charts | [▶ Demo](https://multimodal-vision-qa-demo.vercel.app) | [Repo](https://github.com/dev4aibots/multimodal-vision-qa) |
 
-- **Business app** — the business customizes its own theme, design and vibe; manages
-  customer communication, services, announcements and automations. Paid plans.
-- **Customer app** — free forever. Customers join via business code, QR or link, then get
-  AI chat, announcements, one-click appointment booking, local reviews and automations.
+> **PRAMAAN** is a **hackathon project** — built by **Team Madmax** for **Code Carnival 3.0 (Problem Statement PS-01)**, team led by **Nikhil Rathod**; I was a team member. It is included here as hackathon experience / proof of work.
 
-> **Status: in active development — not launched.** No funding, no revenue, no customers
-> yet, and we don't pretend otherwise. Every feature across our repos is labeled
-> **Working / In development / Roadmap**. Real company, real code, honest stage.
+## 🛠️ Core stack
 
-## This repo
+**Agentic AI:** LangGraph · LangChain · CrewAI · AutoGen · MCP · Multi-agent systems
+**RAG & Vector:** ChromaDB · FAISS · LlamaIndex · Embeddings · Reranking
+**LLM Engineering:** PyTorch · Hugging Face · LoRA/QLoRA · Ollama · OpenAI / Anthropic SDKs
+**Engineering:** Python · TypeScript · FastAPI · Next.js · Docker · PostgreSQL · Vercel
 
-This repository hosts the **Dev4AIBots company website** (Next.js + TypeScript, custom CSS —
-no template look). Source of truth for company facts: [`lib/site.ts`](lib/site.ts).
-Application pack for startup programs: [`docs/startup-program-application.md`](docs/startup-program-application.md).
+## 🎓 Credentials — 12 Coursera professional certificates
 
-The product apps live in their own repos: [`admin-app`](https://github.com/dev4aibots/admin-app)
-(business side, native Android) and [`customer-app`](https://github.com/dev4aibots/customer-app)
-(customer side, native Android).
+| Certificate | Provider | Earned |
+|-------------|----------|--------|
+| IBM AI Engineering Professional Certificate | IBM | May 2026 |
+| IBM RAG and Agentic AI Professional Certificate | IBM | Feb 2026 |
+| IBM AI Developer Professional Certificate | IBM | Dec 2025 |
+| Building AI Agents and Agentic Workflows | IBM | Jan 2026 |
+| AI Agent Developer | Vanderbilt University | Feb 2026 |
+| AI Agents and Agentic AI in Python: Powered by Generative AI | Vanderbilt University | Jan 2026 |
+| Generative AI Automation | Vanderbilt University | Jan 2026 |
+| Generative AI Software Engineering | Vanderbilt University | Sep 2026 |
+| Build Anything with AI: No Code Required | Vanderbilt University | Sep 2026 |
+| Generative AI for Software Development | DeepLearning.AI | Sep 2026 |
+| Robotic Process Automation (RPA) | UiPath | Mar 2026 |
+| Generative AI for Automating HR Workflows | Edureka | Feb 2026 |
 
-## Engineering proof
+Full credential list with verification links: [dev4aibots.com](https://dev4aibots.com)
 
-- **[holo-racer](https://github.com/dev4aibots/holo-racer)** — webcam-controlled 3D racing
-  game (Vite + TypeScript + Three.js + MediaPipe hand tracking), deployed and playable.
-- **[Pramaan](https://github.com/dev4aibots/Pramaan)** — Python RAG evidence engine
-  (`apps/`, `src/`, `tests/`, `evals/`, Docker).
+## 📫 Contact
 
-## Contact
+- **Portfolio:** https://dev4aibots.com
+- **LinkedIn:** https://www.linkedin.com/in/devraj0770
+- **Email:** hello@dev4aibots.com
 
-hello@dev4aibots.com
+*Open to entry-level AI Engineer opportunities — remote worldwide, immediate start.*
