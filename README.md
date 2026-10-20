@@ -1,8 +1,8 @@
 # Hi, I'm Devraj Gadhvi 👋
 
-**AI Engineer — Agentic AI, RAG & LLM Systems**
+**AI Engineer — Agentic AI, RAG & LLM Systems · AI Leverage in Practice**
 
-I build production-oriented AI systems: autonomous agents, retrieval-augmented generation pipelines, MCP tooling, and real-time voice AI — every system below has a **live demo** you can try right now.
+I build AI systems and use AI to run real work — AI leverage in practice. I build production-oriented AI systems: autonomous agents, retrieval-augmented generation pipelines, MCP tooling, and real-time voice AI — and through Dev4AIBots, my AI-native studio, I ship systems, research, and production through agent workflows. Every system below has a **live demo** you can try right now.
 
 - 🏢 Founder of **Dev4AIBots** — a Udyam-registered micro enterprise (UDYAM-GJ-29-0019103), founded June 2026
 - 📍 Based in India (UTC+5:30) — **open to remote roles worldwide, available for immediate start**
@@ -32,9 +32,11 @@ I build production-oriented AI systems: autonomous agents, retrieval-augmented g
 
 ## 🛠️ Core stack
 
+**AI Leverage & Platforms:** AI Leverage · Claude · Claude Code · Cursor · Codex · ChatGPT · Gemini · Vibe Coding
 **Agentic AI:** LangGraph · LangChain · CrewAI · AutoGen · MCP · Multi-agent systems
 **RAG & Vector:** ChromaDB · FAISS · LlamaIndex · Embeddings · Reranking
 **LLM Engineering:** PyTorch · Hugging Face · LoRA/QLoRA · Ollama · OpenAI / Anthropic SDKs
+**Also:** LLM Systems · Prompt Engineering · Multi-Agent Orchestration · Local LLMs / BYOK · NVIDIA NIM · n8n Automation
 **Engineering:** Python · TypeScript · FastAPI · Next.js · Docker · PostgreSQL · Vercel
 
 ## 🎓 Credentials — 12 Coursera professional certificates
