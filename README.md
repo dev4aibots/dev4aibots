@@ -1,67 +1,41 @@
 # Devraj Gadhvi
 
-**AI Engineer — Agentic AI, RAG & LLM Systems · AI Leverage in Practice**
+**AI Engineer — Agentic AI · RAG & LLM Systems · AI Automation · Evaluation**
 
-I build AI systems and use AI to run real work — AI leverage in practice. I build production-oriented AI systems: autonomous agents, retrieval-augmented generation pipelines, MCP tooling, and real-time voice AI — and through Dev4AIBots, my AI-native studio, I ship systems, research, and production through agent workflows. Every system below has a **live demo** you can try right now.
+I build AI systems that survive real users. Not thin wrappers around LLM APIs — systems with retrieval, security, cost engineering, evaluation, and deployment. Everything below is live, open source, and built by me from scratch.
 
-- Founder of **Dev4AIBots** — a Udyam-registered micro enterprise (UDYAM-GJ-29-0019103), founded June 2026
-- Based in India (UTC+5:30) — **open to remote roles worldwide, available for immediate start**
-- Looking for entry-level **AI Engineer** roles (remote / hybrid / contract / freelance)
+- **16 verified credentials** · Microsoft · Google · IBM · DeepLearning.AI · Vanderbilt · UiPath · Edureka · JetBrains (71 courses, all labs & capstones)
+- Founder of **Dev4AIBots** — Udyam-registered AI-native studio (UDYAM-GJ-29-0019103)
+- Based in India (UTC+5:30) · **open to remote roles worldwide · immediate start**
 
 <p>
   <a href="https://dev4aibots.com"><img src="https://img.shields.io/badge/Portfolio-dev4aibots.com-0A66C2?style=for-the-badge"></a>
   <a href="https://www.linkedin.com/in/devraj0770"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="mailto:devrajgadhvi726292@gmail.com"><img src="https://img.shields.io/badge/Email-devrajgadhvi726292@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
+  <a href="https://github.com/dev4aibots/llm-benchmarks"><img src="https://img.shields.io/badge/Benchmarks-191%20models%20measured-0A66C2?style=for-the-badge"></a>
 </p>
 
-## Systems — all live, all open source
+## What I bring
 
-| # | System | What it does | Live demo | Code |
-|---|--------|--------------|-----------|------|
-| 1 | **Semantic Code Search** | Repository-scale search engine mapping natural language to AST nodes | [Demo](https://semantic-code-search-demo.vercel.app) | [Repo](https://github.com/dev4aibots/semantic-code-search) |
-| 2 | **Deep Research Orchestrator** | Agentic workflow for long-horizon planning and deep web research | [Demo](https://deep-research-orchestrator-demo.vercel.app) | [Repo](https://github.com/dev4aibots/deep-research-orchestrator) |
-| 3 | **Agentic CLI Workspace** | Production-oriented coding agent for repository analysis, implementation, and testing | [Demo](https://agentic-cli-workspace-demo.vercel.app) | [Repo](https://github.com/dev4aibots/agentic-cli-workspace) |
-| 4 | **Enterprise RAG Engine** | Production-oriented Retrieval-Augmented Generation (RAG) system with evaluation | [Demo](https://enterprise-rag-engine-demo.vercel.app) | [Repo](https://github.com/dev4aibots/enterprise-rag-engine) |
-| 5 | **MCP Tool Registry** | Model Context Protocol (MCP) implementation standardizing tool execution | [Demo](https://mcp-tool-registry-demo.vercel.app/tools) | [Repo](https://github.com/dev4aibots/mcp-tool-registry) |
-| 6 | **Infra Diagnostics Agent** | Autonomous DevOps agent for root-cause analysis via Kubernetes and Prometheus | [Demo](https://infra-diagnostics-agent-demo.vercel.app) | [Repo](https://github.com/dev4aibots/infra-diagnostics-agent) |
-| 7 | **PRAMAAN** | Zero-trust security architecture for RAG — evidence must be earned before it is used | [Demo](https://pramaan-dev4aibots.vercel.app) | [Repo](https://github.com/dev4aibots/Pramaan) |
-| 8 | **Realtime Voice AI** | Low-latency conversational voice AI over WebSockets | [Demo](https://realtime-voice-ai-demo-dev4aibots.vercel.app) | [Repo](https://github.com/dev4aibots/realtime-voice-ai) |
-| 9 | **Multimodal Vision QA** | Vision-first AI pipeline that extracts structure from PDFs and charts | [Demo](https://multimodal-vision-qa-demo.vercel.app) | [Repo](https://github.com/dev4aibots/multimodal-vision-qa) |
+- **Agentic AI** — LangGraph, LangChain, CrewAI, MCP servers, multi-agent orchestration, human-in-the-loop
+- **RAG & security** — zero-trust retrieval, RBAC inside SQL (pgvector), prompt-injection defense, PII shield, audit chaining
+- **LLM ops** — model routing with failover, 191-model latency/cost benchmarks, LiteLLM gateway, evaluation harnesses
+- **Automation** — n8n multi-tenant workflows, UiPath RPA, API/webhook integrations
+- **Full-stack delivery** — TypeScript/Next.js, Python/FastAPI, PostgreSQL, Docker, Vercel, CI
 
-> **PRAMAAN** is a **hackathon project** — built by **Team Madmax** for **Code Carnival 3.0 (Problem Statement PS-01)**, team led by **Nikhil Rathod**; I was a team member. It is included here as hackathon experience / proof of work.
+## Featured systems — live demos, source included
 
-## Core stack
+| # | System | What it proves | Live demo | Code |
+|---|--------|----------------|-----------|------|
+| 1 | **PRAMAAN** | Zero-trust RAG: access control enforced inside retrieval, evidence-bound answers, hash-chained audit | [Demo](https://pramaan-dev4aibots.vercel.app) | [Repo](https://github.com/dev4aibots/Pramaan) |
+| 2 | **LLM Benchmarks** | 191 models, 5 providers, measured latency & success — routing decisions from data | [Repo](https://github.com/dev4aibots/llm-benchmarks) | — |
+| 3 | **Infra Diagnostics Agent** | Agentic root-cause analysis over Kubernetes + Prometheus | [Demo](https://infra-diagnostics-agent-demo.vercel.app) | [Repo](https://github.com/dev4aibots/infra-diagnostics-agent) |
+| 4 | **Semantic Code Search** | Natural language → AST-level code retrieval | [Demo](https://semantic-code-search-demo.vercel.app) | [Repo](https://github.com/dev4aibots/semantic-code-search) |
+| 5 | **MCP Tool Registry** | Model Context Protocol server with live tool execution | [Demo](https://mcp-tool-registry-demo.vercel.app/tools) | [Repo](https://github.com/dev4aibots/mcp-tool-registry) |
+| 6 | **Deep Research Orchestrator** | Long-horizon agentic research with cited reporting | [Demo](https://deep-research-orchestrator-demo.vercel.app) | [Repo](https://github.com/dev4aibots/deep-research-orchestrator) |
 
-**AI Leverage & Platforms:** Claude · Claude Code · Cursor · Codex · ChatGPT · Gemini · Vibe Coding
-**Agentic AI:** LangGraph · LangChain · CrewAI · AutoGen · MCP · Multi-agent systems
-**RAG & Vector:** ChromaDB · FAISS · LlamaIndex · Embeddings · Reranking
-**LLM Engineering:** PyTorch · Hugging Face · LoRA/QLoRA · Ollama · OpenAI / Anthropic SDKs
-**Also:** LLM Systems · Prompt Engineering · Multi-Agent Orchestration · Local LLMs / BYOK · NVIDIA NIM · n8n Automation
-**Engineering:** Python · TypeScript · FastAPI · Next.js · Docker · PostgreSQL · Vercel
+More systems: [Enterprise RAG Engine](https://github.com/dev4aibots/enterprise-rag-engine) · [Realtime Voice AI](https://github.com/dev4aibots/realtime-voice-ai) · [Agentic CLI Workspace](https://github.com/dev4aibots/agentic-cli-workspace) · [Multimodal Vision QA](https://github.com/dev4aibots/multimodal-vision-qa)
 
-## Credentials — 12 Coursera professional certificates
+## Honest line
 
-| Certificate | Provider | Earned |
-|-------------|----------|--------|
-| IBM AI Engineering Professional Certificate | IBM | May 2026 |
-| IBM RAG and Agentic AI Professional Certificate | IBM | Feb 2026 |
-| IBM AI Developer Professional Certificate | IBM | Dec 2025 |
-| Building AI Agents and Agentic Workflows | IBM | Jan 2026 |
-| AI Agent Developer | Vanderbilt University | Feb 2026 |
-| AI Agents and Agentic AI in Python: Powered by Generative AI | Vanderbilt University | Jan 2026 |
-| Generative AI Automation | Vanderbilt University | Jan 2026 |
-| Generative AI Software Engineering | Vanderbilt University | Sep 2026 |
-| Build Anything with AI: No Code Required | Vanderbilt University | Sep 2026 |
-| Generative AI for Software Development | DeepLearning.AI | Sep 2026 |
-| Robotic Process Automation (RPA) | UiPath | Mar 2026 |
-| Generative AI for Automating HR Workflows | Edureka | Feb 2026 |
-
-Full credential list with verification links: [dev4aibots.com](https://dev4aibots.com)
-
-## Contact
-
-- **Portfolio:** https://dev4aibots.com
-- **LinkedIn:** https://www.linkedin.com/in/devraj0770
-- **Email:** devrajgadhvi726292@gmail.com
-
-*Open to entry-level AI Engineer opportunities — remote worldwide, immediate start.*
+No university degree claimed · no prior paid employment claimed. Every credential below links to its Coursera verification page at [dev4aibots.com](https://dev4aibots.com). Every system is labeled with what it proves — and what it does not.
