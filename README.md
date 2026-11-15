@@ -17,6 +17,7 @@ Founder, **Dev4AIBots** — Udyam-registered studio (UDYAM-GJ-29-0019103)
 |---|---|---|---|
 | **AI Employee Platform** | Multi-tenant AI-agent SaaS core: Postgres RLS isolation, AES-256-GCM credential vault bound to tenant, idempotent billing webhooks, n8n dispatch with a circuit breaker, hash-chained audit ledger | **155 tests** · [live demo runs 12 real attacks in your browser](https://ai-employee-platform-dev4aibots.vercel.app) · green CI on Node 20/22/24 | [repo](https://github.com/dev4aibots/ai-employee-platform) |
 | **PRAMAAN** | Zero-trust RAG: injection screening before indexing, authorization enforced inside the vector query, evidence-bound answers, PII redaction, tamper-evident audit | [live demo](https://pramaan-dev4aibots.vercel.app) · Next.js 14 + PGlite/pgvector + Transformers.js, all in-browser | [repo](https://github.com/dev4aibots/Pramaan) |
+| **Agent Eval Lab** | Evaluation harness for grounded QA: six rule graders, unbiased pass@k and pass^k, cluster bootstrap CI, exact McNemar regression gate that fails CI on a real drop | **143 tests** · [live report rendered by CI](https://dev4aibots.github.io/agent-eval-lab/) · gate verified to exit 2 on a regression | [repo](https://github.com/dev4aibots/agent-eval-lab) |
 | **Harness² Studio** | Zero-dependency Material 3 desktop control room for Google Research Harness² — resumable hash-verified installer, 71 audited controls | **44 tests** · ruff clean · CI on Ubuntu/macOS/Windows · installer verified 107 files / 848 KB end to end | [repo](https://github.com/dev4aibots/harness2-studio) |
 
 ---
@@ -29,6 +30,7 @@ Execution labels are literal. `real` means the deployed code does the work when 
 |---|---|---|---|
 | [AI Employee Platform](https://github.com/dev4aibots/ai-employee-platform) | Tenancy, credential handling, webhook idempotency, retry discipline, audit chains | `real` | PostgreSQL RLS · TypeScript · n8n · LiteLLM |
 | [PRAMAAN](https://github.com/dev4aibots/Pramaan) | Security architecture for RAG — 5 checkpoints from ingest to audit | `real` | Next.js 14 · PGlite + pgvector · Transformers.js |
+| [Agent Eval Lab](https://github.com/dev4aibots/agent-eval-lab) | Regression gating for AI features: graders, pass@k/pass^k, bootstrap CI, exact McNemar, exit codes a CI job can enforce | `real` | TypeScript · zero runtime deps · GitHub Actions |
 | [Semantic Code Search](https://github.com/dev4aibots/semantic-code-search) | AST-aware chunking, hybrid dense+sparse ranking with RRF, measured recall | `real` (live `/api/query`) | TypeScript · Tree-sitter · `make eval` |
 | [MCP Tool Registry](https://github.com/dev4aibots/mcp-tool-registry) | Model Context Protocol server with parity tests against the spec | `real` (in-browser JSON-RPC) | TypeScript · MCP · Zod |
 | [Harness² Studio](https://github.com/dev4aibots/harness2-studio) | Desktop tooling craft: process trees, atomic writes, hash-verified downloads | `real` | Python 3.12 · Tk · zero runtime deps |
@@ -45,7 +47,7 @@ Deterministic interface prototypes — the UI is complete, the engine is a label
 - **Retrieval** — hybrid dense + lexical search, RRF fusion, AST-aware chunking, pgvector with filtered HNSW, per-row authorization inside the query
 - **Agents & automation** — n8n multi-tenant workflows, LiteLLM routing with failover, MCP tool servers, human-in-the-loop approval gates, idempotency keys, dead-letter paths
 - **Security** — row level security, envelope encryption with key rotation, HMAC verification with replay windows, prompt-injection screening, PII redaction, hash-chained audit logs
-- **Evaluation** — probe datasets, pass/fail gates, latency and cost per run, provenance labels that separate measured numbers from published ones
+- **Evaluation** — rule graders with explicit expectations, unbiased pass@k and pass^k, cluster bootstrap intervals, exact McNemar regression gates wired into CI, dev/test splits so thresholds are not tuned on the number you report, cost and latency per run
 - **Delivery** — TypeScript/Next.js, Python/FastAPI, PostgreSQL, Docker, GitHub Actions CI, Vercel
 
 ---
