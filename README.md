@@ -1,9 +1,9 @@
-# Devraj Gadhvi
+﻿# Devraj Gadhvi
 
 **Applied AI & AI Automation Engineer** — I build the parts of AI products that survive real users: permission-aware retrieval, multi-tenant data isolation, workflow automation that can be retried safely, and evaluations that say no.
 
 Gujarat, India (UTC+5:30) · open to remote roles worldwide · immediate start
-Founder, **Dev4AIBots** — Udyam-registered studio (UDYAM-GJ-29-0019103)
+Independent AI engineer, **Dev4AIBots** — Udyam-registered studio (UDYAM-GJ-29-0019103)
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-dev4aibots.com-0A66C2?style=for-the-badge)](https://dev4aibots.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devraj0770)
@@ -37,11 +37,9 @@ Execution labels are literal. `real` means the deployed code does the work when 
 | [MCP Tool Registry](https://github.com/dev4aibots/mcp-tool-registry) | Stateless MCP server (2026-07-28) written without the SDK: version negotiation with `-32022` payloads, cacheable discovery, schema-validated tool calls, 47 tests, zero runtime deps | `real` (browser port held to byte parity) | TypeScript · MCP · JSON-RPC |
 | [Deep Research Orchestrator](https://github.com/dev4aibots/deep-research-orchestrator) | Budgeted best-first tree search over research experiments: expand, pay, score on novelty × quality, stop at the budget or depth limit. The search is real and tested; the experiments it plans are simulated and the page says so | `real search / simulated experiments` | Python · stdlib · TypeScript port |
 | [Harness² Studio](https://github.com/dev4aibots/harness2-studio) | Desktop tooling craft: process trees, atomic writes, hash-verified downloads | `real` | Python 3.12 · Tk · zero runtime deps |
-| [Holo-Racer](https://github.com/dev4aibots/holo-racer) | Latency engineering: Web Worker inference, One Euro filtering, quantized netcode | `real` | Three.js · MediaPipe WASM · Playwright |
-| [LLM Gateway Benchmarks](https://github.com/dev4aibots/llm-benchmarks) | 191 models across 5 providers measured for latency and success — used to build a routing table | `real measurement` | LiteLLM · Python probes |
 | [LLM Finetuning Framework](https://github.com/dev4aibots/llm-finetuning-framework) | Artifact-lineage pipeline DAG where the served endpoint records which weights it runs and the model card carries the eval hash - 23 tests, stage metrics labelled as deterministic simulation | `real plumbing / simulated metrics` | Python · stdlib |
 
-Deterministic interface prototypes, kept for history and archived on GitHub — the UI is real, the engine is a labelled simulation: [Infra Diagnostics Console](https://infra-diagnostics-agent-demo.vercel.app), [Agentic CLI Workspace](https://agentic-cli-workspace-demo.vercel.app), [Realtime Voice AI](https://github.com/dev4aibots/realtime-voice-ai). They are no longer listed on the portfolio.
+Deterministic interface prototypes are archived and no longer listed on the portfolio.
 
 ---
 
@@ -69,3 +67,4 @@ Two rules I keep:
 No university degree claimed. No prior paid employment claimed. 16 vendor-verified credentials across Microsoft, Google, IBM, DeepLearning.AI, Vanderbilt, UiPath, Edureka and JetBrains (71 courses, labs and capstones), each linked to its verification page at [dev4aibots.com](https://dev4aibots.com).
 
 What I am offering is evidence of work: systems you can open, tests you can run, and a written record of what each one does and does not prove.
+
